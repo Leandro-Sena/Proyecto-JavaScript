@@ -74,6 +74,7 @@ window.onload = function () {
             imagen: 'https://http2.mlstatic.com/D_NQ_NP_672689-MLA41988903395_052020-O.webp'
         },
     ];
+
     let carrito = [];
     let total = 0;
     const DOMitems = document.querySelector('#items');
@@ -131,8 +132,9 @@ window.onload = function () {
         carrito.push(evento.target.getAttribute('marcador'))
         calcularTotal();
         renderizarCarrito();
+        localStorage.carrito = JSON.stringify(carrito);
     }
-
+    
     function renderizarCarrito() {
         DOMcarrito.textContent = '';
         const carritoSinDuplicados = [...new Set(carrito)];
