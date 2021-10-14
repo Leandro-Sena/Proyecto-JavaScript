@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+  <script src="./js/main.js" defer></script>
+  
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="css/estilo.css">
+  <title>Document</title>
+
+</head>
+
+<body>
+  <header>
+    <!-- <h1 class="text-center"  >Muebleria </h1>
+    <h2 class="text-center">Los Sauces</h2>
+   -->
+    <nav class="navbar navbar-dark bg-dark">
+      <!-- Navbar content -->
+    </nav>
+     <div class="container">
+      <div class="row">
+          <!-- Elementos generados a partir del JSON -->
+          <main id="items" class="col-sm-10 row"></main>
+          <!-- Carrito -->
+          <aside class="col-sm-2">
+              <h2>Carrito</h2>
+              <!-- Elementos del carrito -->
+             <ul id="carrito" class="list-group" ></ul>
+              <hr>
+              <!-- Precio total -->
+              <p class="text-right">Total: <span id="total"></span></p>
+              <button id="boton-vaciar" class="btn btn-dark">Vaciar</button>
+
+              <button
+              id=""
+              class="btn btn-primary"
+              onclick ="pagar(datosDePagos)">
+              PAGAR
+            </button>
+      
+          </aside>
+  </header>
+  <section id="muebles">
+  </section>
+
+  <footer class="text-center"> 
+    <!-- <h5 class="footer">Sitio desarrollado por Leandro</h5> -->
+    <p class="text-dark col-12 mt-4 footer">&copy; Leandro Sena 2021</p>
+  </footer>
+
+  <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>

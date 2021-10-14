@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+  
+
+body{
+  background-color: #cfcccc;
+}
+
+
+.card-body{
+  background-color: rgb(107, 107, 107);
+}
+#muebles{
+  margin: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around
+}
+.footer{
+font-size: 0.9rem;  
+color: white;
+;
+}
+.carrito{
+  justify-content: flex-end;
+}
+
