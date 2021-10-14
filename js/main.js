@@ -131,7 +131,6 @@ window.onload = function () {
         carrito.push(evento.target.getAttribute('marcador'))
         calcularTotal();
         renderizarCarrito();
-
     }
 
     function renderizarCarrito() {
@@ -155,9 +154,8 @@ window.onload = function () {
             miBoton.addEventListener('click', borrarItemCarrito);
             card.appendChild(miBoton);
             DOMcarrito.appendChild(card);
-        });
+        });             
     }
-
     function borrarItemCarrito(evento) {
         const id = evento.target.dataset.item;
         carrito = carrito.filter((carritoId) => {
@@ -188,6 +186,7 @@ window.onload = function () {
 
     renderizarProductos();
 }
+
 const datosDePagos = {
     "items": [
         {
